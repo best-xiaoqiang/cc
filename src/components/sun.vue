@@ -1,38 +1,39 @@
 <template lang="">
 <view class="sun-comp-wrap">
-
-  <view class="sun">
-    <view class="face">
-      <view class="pupil-left"></view>
-      <view class="pupil-right"></view>
-      <view class="smile"></view>
-    </view>
-    
-    <view class="ray">
-      <view class="beam r1"></view>
-      <view class="beam r2"></view>
-      <view class="beam r3"></view>
-      <view class="beam r4"></view>
-      <view class="beam r5"></view>
-      <view class="beam r6"></view>
-      <view class="beam r7"></view>
-      <view class="beam r8"></view>
-      <view class="beam r9"></view>
-      <view class="beam r10"></view>
+  <view class="sun-position">
+    <view class="sun-wrap">
+      <view class="sun">
+        <view class="face">
+          <view class="pupil-left"></view>
+          <view class="pupil-right"></view>
+          <view class="smile"></view>
+        </view>
+        
+        <view class="ray">
+          <view class="beam r1"></view>
+          <view class="beam r2"></view>
+          <view class="beam r3"></view>
+          <view class="beam r4"></view>
+          <view class="beam r5"></view>
+          <view class="beam r6"></view>
+          <view class="beam r7"></view>
+          <view class="beam r8"></view>
+          <view class="beam r9"></view>
+          <view class="beam r10"></view>
+        </view>
+      </view>
+      <view class="cloud">
+        <view class="cloud-left"></view>
+        <view class="cloud-right"></view>
+        <view class="cloud-bottom"></view>
+        <view class="eye-left"><view class="pupil"></view></view>
+        <view class="eye-right"><view class="pupil"></view></view>
+        <view class="mouth"></view>
+        <view class="tear-left"></view>
+        <view class="tear-right"></view>
+      </view>
     </view>
   </view>
-  
-  <view class="cloud">
-    <view class="cloud-left"></view>
-    <view class="cloud-right"></view>
-    <view class="cloud-bottom"></view>
-    <view class="eye-left"><view class="pupil"></view></view>
-    <view class="eye-right"><view class="pupil"></view></view>
-    <view class="mouth"></view>
-    <view class="tear-left"></view>
-    <view class="tear-right"></view>
-  </view>
-  
 </view>
 </template>
 <script>
@@ -41,14 +42,27 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  .sun-comp-wrap {
+.sun-comp-wrap{
+  width: 750rpx;
+  height: 400rpx;
+  overflow: hidden;
   position: relative;
-  margin: auto;
+  background: #3474de;
+  background: red;
+}
+.sun-position{
+  position: absolute;
+  top: -370rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3474de;
+}
+.sun-wrap {
+  position: relative;
   display: block;
-  margin-top: 15%;
   width: 600px;
-  height: 420px;
-  transform: scale(0.4);
+  height: 600px;
+  transform: scale(.45);
   background: #3474de;
 }
 
@@ -56,7 +70,7 @@ export default {
 .sun {
   position: absolute;
   background: #FFF054;
-  top: 15%;
+  top: 35%;
   right: 30%;
   width: 140px;
   height: 140px;
@@ -227,7 +241,7 @@ export default {
   background: #F4F4F4;
   width: 250px;
   height: 100px;
-  top: 40%;
+  top: 50%;
   left: 25%;
   border-radius: 100px;
 }

@@ -7,9 +7,9 @@
 	],
 	"globalStyle": {
 		"backgroundTextStyle": "dark",
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "test",
-		"navigationBarBackgroundColor": "#FFDA44",
+		"navigationBarBackgroundColor": "#3474de",
 		"backgroundColor": "#F8F8F8",
 		"enablePullDownRefresh": false
 	}

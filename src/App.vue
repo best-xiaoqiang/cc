@@ -27,7 +27,7 @@ page > view {
   height: 100%;
 }
 view {
-  background-color: #fff;
+  background-color: transparent;
 }
 .section {
   position: relative;
