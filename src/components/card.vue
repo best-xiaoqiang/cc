@@ -1,6 +1,6 @@
 <template lang="">
-  <view class="card-comp-wrap blue-color">
-    <view class="card-wrap-inner blue-color">
+  <view class="card-comp-wrap background-blue">
+    <view class="card-wrap-inner background-blue">
       <view class="card-title">{{title}}</view>
       <view class="card-desc">{{desc}}</view>
     </view>

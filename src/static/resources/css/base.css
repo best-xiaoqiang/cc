@@ -58,8 +58,121 @@ image {
   background: rgb(71, 93, 117);
 }
 
-.blue-color{
+.background-blue{
   background: #3474de;
+}
+
+.title-font{
+  font-size: 60rpx;
+  font-weight: bold;
+}
+
+.font-style-cloud{
+  color: transparent;
+  background-color : blue;
+  text-shadow : rgba(255,255,255,0.5) 0 10rpx 12rpx, rgba(255,255,255,0.2) 2rpx 6rpx 6rpx;
+  -webkit-background-clip : text;
+}
+
+.font-style-hole{
+  color: transparent;
+  background-color : black;
+  text-shadow : rgba(255,255,255,0.5) 0 10rpx 12rpx, rgba(255,255,255,0.2) 2rpx 6rpx 6rpx;
+  -webkit-background-clip : text;
+}
+
+.font-style-rise{
+  color: #fafafa;
+  letter-spacing: 0;
+  text-shadow: 
+    0px 1rpx 0px #999, 
+    0px 2rpx 0px #888, 
+    0px 4rpx 0px #777, 
+    0px 6rpx 0px #666, 
+    0px 8rpx 0px #555, 
+    0px 10rpx 0px #444, 
+    0px 12rpx 0px #333, 
+    0px 14rpx 12rpx #001135;
+}
+
+.font-style-border{
+  text-shadow:
+    -2rpx -2rpx 0 #4f4d57,  
+    2rpx -2rpx 0 #4f4d57,
+    -2rpx 2rpx 0 #4f4d57,
+    2rpx 2rpx 0 #4f4d57,
+    0px 4rpx 4rpx rgba(0,0,0,0.6);
+}
+
+/**logo扫光效果CSS**/
+.hgroup{
+  position: relative;
+  overflow: hidden;
+}
+.hgroup:before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: -50px;
+  width: 250px;
+  height: 15px;
+  background-color: rgba(236,236,236,.5);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  /* -webkit-animation: searchLights 1s ease-in 1s infinite;
+  -o-animation: searchLights 1s ease-in 1s infinite; */
+  animation: searchLights 1s ease-in 1s infinite;
+}
+
+@-webkit-keyframes searchLights {
+0% {
+  left: -100px;
+  top: 0
+}
+
+to {
+  left: 320px;
+  top: 0px
+}
+}
+
+@-o-keyframes searchLights {
+0% {
+  left: -100px;
+  top: 0
+}
+
+to {
+  left: 320px;
+  top: 0px
+}
+}
+
+@-moz-keyframes searchLights {
+0% {
+  left: -100px;
+  top: 0
+}
+
+to {
+  left: 320px;
+  top: 0px
+}
+}
+
+@keyframes searchLights {
+0% {
+  left: -100px;
+  top: 0
+}
+
+to {
+  left: 320px;
+  top: 0px
+}
 }
 
 .one-px:before {

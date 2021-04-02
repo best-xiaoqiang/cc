@@ -1,5 +1,9 @@
 <template lang="">
   <view class="index-wrap flex-column grid">
+    <view class="font-style-cloud title-font">的点点滴滴</view>
+    <view class="font-style-rise title-font">的点点滴滴</view>
+    <view class="font-style-hole title-font">的点点滴滴</view>
+    <TitleCard />
         <Sun></Sun>
     <!-- <view class="box-bling">点点滴滴</view><br> -->
         <Card></Card>
@@ -26,6 +30,7 @@ import Process from '@/components/process.vue'
 import SunBtn from '@/components/sun-btn.vue'
 import Paper from '@/components/paper.vue'
 import Card from '@/components/card.vue'
+import TitleCard from '@/components/title-card.vue'
 @Component({
   components: {
     Sun,
@@ -33,7 +38,8 @@ import Card from '@/components/card.vue'
     Process,
     SunBtn,
     Paper,
-    Card
+    Card,
+    TitleCard
   }
 })
 export default class extends Vue {

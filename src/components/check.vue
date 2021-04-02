@@ -1,5 +1,5 @@
 <template lang="">
-  <view class="check-wrap tool-color">
+  <view class="check-wrap tool-color font-style-border">
     <view class="check-dot-wrap">
       <view v-if="checked" class="check-dot"></view>
     </view>
@@ -48,12 +48,6 @@ export default class extends Vue{
     font-size: 32rpx;
     padding-left: 20rpx;
     color: white;
-    text-shadow:
-      -1px -1px 0 #4f4d57,  
-      1px -1px 0 #4f4d57,
-      -1px 1px 0 #4f4d57,
-      1px 1px 0 #4f4d57,
-      0px 2px 2px rgba(0,0,0,0.4);
   }
 }
 </style>
